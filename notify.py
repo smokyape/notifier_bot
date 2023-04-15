@@ -1,6 +1,7 @@
 import telebot
 import schedule
 import time
+from requirements import *
 
 # Создание бота с помощью токена
 bot = telebot.TeleBot("")
