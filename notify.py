@@ -4,11 +4,11 @@ import time
 from requirements import *
 
 # Создание бота с помощью токена
-bot = telebot.TeleBot("")
+bot = telebot.TeleBot("ваш_токен_бота")
 
 # Задание расписания для каждого сотрудника
 schedule.every().day.at("17:00").do(lambda: bot.send_message(chat_id="ID_сотрудника_А", text="Отправить накладные клиентам"))
-schedule.every().day.at("20:15").do(lambda: bot.send_message(chat_id="808629478", text="Проверить всех ли клиентов подключили к боту в телеграмм"))
+schedule.every().day.at("20:15").do(lambda: bot.send_message(chat_id="ID_сотрудника_Б", text="Проверить всех ли клиентов подключили к боту в телеграмм"))
 
 # Обработчик команды /start
 @bot.message_handler(commands=['start'])
