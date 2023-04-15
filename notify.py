@@ -3,7 +3,7 @@ import schedule
 import time
 
 # Создание бота с помощью токена
-bot = telebot.TeleBot("6190642798:AAHDpVDtMlW5rlD4UY7cDMbLrcnWwUU4TqQ")
+bot = telebot.TeleBot("")
 
 # Задание расписания для каждого сотрудника
 schedule.every().day.at("17:00").do(lambda: bot.send_message(chat_id="ID_сотрудника_А", text="Отправить накладные клиентам"))
